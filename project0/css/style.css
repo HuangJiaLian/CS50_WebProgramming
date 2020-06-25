@@ -1,0 +1,21 @@
+h1 {
+    color:green;
+}
+
+/* Class select */
+.important {
+    font-weight:bold;
+}
+/* Id select */
+#hobby {
+    background-color: lightcoral;
+    border-radius: 15px;
+}
+
+@media print {
+    /* Class screen only will only display on the page but don't display on
+    print page. */
+    .screen-only {
+        display: none;
+    }
+}

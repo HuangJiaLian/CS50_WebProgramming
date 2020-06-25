@@ -1,0 +1,22 @@
+ul {
+  font-size: 14px;
+  color: pink;
+}
+
+ol {
+  font-size: 18px;
+  color: pink;
+}
+
+div {
+  font-size: 18px;
+}
+div p {
+  color: black;
+}
+div ul {
+  background-color: green;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=varialbles.css.map */

@@ -1,0 +1,29 @@
+// sccs可以引入变量让css的改动更轻松
+// 但是需要编译
+// sass variables.scss variables.css
+$color: pink;
+
+ul {
+    font-size: 14px;
+    color: $color;
+}
+
+ol {
+    font-size: 18px;
+    color: $color;
+}
+
+
+div {
+    font-size: 18px;
+  
+    p {
+      color: black;
+
+    }
+  
+    ul {
+        background-color: green;
+        border-radius: 15px;
+    }
+  }

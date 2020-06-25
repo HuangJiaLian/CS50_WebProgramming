@@ -1,0 +1,25 @@
+// 就是一串信息而已
+%message {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+// 继承所有message里面的，但添加背景颜色这个新东西
+.success {
+    @extend %message;
+    background-color: green;
+}
+
+.warning {
+    @extend %message;
+    background-color: orange;
+}
+
+.error {
+    @extend %message;
+    background-color: red;
+}

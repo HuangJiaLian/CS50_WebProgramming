@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block heading %}
+    First Page
+{% endblock %}
+
+{% block body %}
+    <!-- 这里是一个placeholder -->
+    Placeholder:
+    <h1>{{ headline }}</h1>
+    <!-- 条件判断 -->
+    Condition:
+    {% if new_year %}
+        <h2>Yes! Happy New Year!</h1>
+    {% else %}
+        <h1>No</h1>
+    {% endif %}
+    Loops:
+    <ul>
+        {% for name in names %}
+            <li> {{ name }}</li>
+        {% endfor %}
+    </ul>
+    Links:
+    <a href="{{ url_for('more') }}">See more...</a>
+
+
+    Form: 
+    <!-- 想要像server传数据 -->
+    <!-- 找到hello这个函数 -->
+    <form action="{{ url_for('hello')}}" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <button>Submit</button>
+    </form>
+
+    Notes: 
+    <ul>
+        {% for note in notes %}
+            <li>{{ note }}</li>
+        {% endfor%}
+    </ul>
+
+    <form action="{{ url_for('index') }}" method="post">
+        <input type="text" name="note" placeholder="Enter Note Here">
+        <button> Add Note</button> 
+    </form>
+{% endblock %}

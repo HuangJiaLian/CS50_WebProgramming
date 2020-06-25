@@ -1,0 +1,20 @@
+h1 {
+    color:green;
+}
+
+/* Class select */
+.important {
+    font-weight:bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    background-color: salmon;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
